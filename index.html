@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="portfolio_style.css"> -->
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#intro">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <section id="intro">
+                <div class="container">
+                  <div class="intro-content">
+                    <!-- Professional Photo -->
+                    <img src="Jinalphoto.jpg" alt="Jinal Patel" class="profile-image">
+                    
+                    <!-- Name and Bio -->
+                    <div class="bio">
+                      <h1>Jinal Patel</h1>
+                      <p>Web Developer | Passionate about creating innovative web solutions.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </div>
+    </div>
+    <!---------------------About----------------------------->
+    <div id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2" >
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! I’m <strong>Jinal Patel</strong>, a passionate web developer with experience in creating dynamic, user-friendly websites and web applications. My expertise includes front-end technologies like HTML, CSS, JavaScript, and frameworks like Python, as well as back-end development.
+                      </p>
+                      <p>
+                        I thrive on turning complex problems into simple, beautiful, and intuitive designs. I enjoy working with cutting-edge technology to build projects that solve real-world problems, whether it's for individuals, businesses, or organizations.
+                      </p>
+                      <p>
+                        When I’m not coding, you’ll find me exploring new tech trends, learning about design, or contributing to open-source projects. I love collaborating with teams and continuously improving my skills.
+                      </p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sept 2024-Current</span><br>Easygolife Intern (Web Developer Internship Program)</li>
+                            <li><span>April 2021-February 2024</span><br>ANIL S. PATEL (LAW FIRM) Office Admin</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-Current</span><br>Master in Full Stack Web Development With AWS (I.T.ItVedant)</li>
+                        <li><span>2024</span><br>MBA</li>
+                        <li><span>2021</span><br>Bcom</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    <!----------------------------------services----------------------------->
+    <div id="services">
+        <div class="container">
+        <div class="row">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">  
+            <div>
+                <h2>WDE:Web Designing Essential</h2>
+                <p>A personal portfolio website built using HTML, CSS, and JavaScript.The Main Services typically involved in web design: Website Layout and Structure,Graphic Design,Content Management System (CMS) Integration,Front-End Development,SEO Optimization,E-commerce Functionality (If applicable),Website Maintenance and Support,Analytics and Reporting,Hosting and Domain Services</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>SQL:Structured Query Language</h2>
+                <p>Overview of the key SQL services provided by database administrators (DBAs) and developers:Database Design and Architecture,Database Creation and Management,Query Optimization,Stored Procedures and Functions,Data Security and Compliance,,Database Maintenance,Data Analytics and Reporting,Database Replication and Clustering,Transactions and Concurrency Control,Data Warehousing and ETL Processes,Monitoring and Diagnostics,Cloud SQL Services</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Python and Django</h2>
+                <p>Essential Services related to Python and Django web development: Custom Web Application Development,Django Framework Setup and Configuration,User Authentication and Authorization,Database Integration and Management,Frontend Integration with Django, E-commerce Solutions,SEO Optimization,Security Services,Performance Optimization,Deployment and Hosting,Testing and Debugging,Maintenance and Support,Third-Party Integration,Django CMS Solutions</p>
+                <a href="#">learn more</a>
+            </div>
+            </div>
+        </div>  
+        </div>
+    </div>
+    <!------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <h1 class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>contact@example.com</p>
+                    <p>9223295398</p>
+                    <!-- fas fa-phone-square-alt -->
+                    <div class="social-icon">
+                        <a href="http://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="CV.pdf" download class="button button2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                </div> 
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Jinal. Made with <i class="fas fa-heart"></i>by ItVedant Tutorials</p>
+        </div>
+    </div>
+
+
+
+    
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+                }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+</html>
